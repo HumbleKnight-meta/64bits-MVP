@@ -6,7 +6,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 app = FastAPI()
 
 # 1. Database Setup
-DB_URL = "mysql+pymysql://root:pass@localhost:3306/labelguard_db"
+DB_URL = "mysql+pymysql://root:1234@localhost:3306/labelguard_db"
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
